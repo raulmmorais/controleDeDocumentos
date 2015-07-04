@@ -1,0 +1,112 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>		
+		<action name="" class="com.controle.documentos.action.DetaultAction">
+			<result type="redirectAction">
+				<param name="actionName">home</param>
+			</result>
+		</action>
+		
+		<action name="home" class="com.controle.documentos.action.HomeAction" method="home">
+			<result type="tiles">home</result>
+		</action>
+		
+		<action name="novoDocumento" class="com.controle.documentos.action.DocumentoAction" method="novoDocumento">
+			<result type="tiles">novoDocumento</result>
+		</action>
+		
+		<action name="abrirDocumento" class="com.controle.documentos.action.DocumentoAction" method="abrirDocumento">
+			<result type="tiles">abrirDocumento</result>
+		</action>
+		
+		<action name="renomearDocumento" class="com.controle.documentos.action.DocumentoAction" method="renomearDocumento">
+			<result type="tiles">renomearDocumento</result>
+		</action>
+		
+		<action name="documentosDigitalizados" class="com.controle.documentos.action.DocumentoAction" method="documentosDigitalizados">
+			<result type="tiles">documentosDigitalizados</result>
+		</action>
+		
+		<action name="tiposDeDocumento" class="com.controle.documentos.action.DocumentoAction" method="tiposDeDocumento">
+			<result type="tiles">tiposDeDocumento</result>
+		</action>
+		
+		<action name="novoTipoDeDocumento" class="com.controle.documentos.action.DocumentoAction" method="novoTipoDeDocumento">
+			<result type="tiles">novoTipoDeDocumento</result>
+		</action>
+		
+		<action name="gravarTipoDocumento" class="com.controle.documentos.action.DocumentoAction" method="gravarTipoDocumento">
+			<result type="redirectAction">
+				<param name="actionName">tiposDeDocumento</param>
+			</result>
+		</action>
+		
+		<action name="novoAutor" class="com.controle.documentos.action.DocumentoAction" method="novoAutor">
+			<result type="tiles">novoAutor</result>
+		</action>
+		
+		<action name="gravarAutor" class="com.controle.documentos.action.DocumentoAction" method="gravarAutor">
+			<result type="redirectAction">
+				<param name="actionName">listaAutores</param>
+			</result>
+		</action>
+		
+		<action name="listaAutores" class="com.controle.documentos.action.DocumentoAction" method="listaAutores">
+			<result type="tiles">listaAutores</result>
+		</action>
+		
+		<action name="novaNatureza" class="com.controle.documentos.action.DocumentoAction" method="novaNatureza">
+			<result type="tiles">novaNatureza</result>
+		</action>
+		
+		<action name="gravarNaturezaDocumento" class="com.controle.documentos.action.DocumentoAction" method="gravarNovaNatureza">
+			<result type="redirectAction">
+				<param name="actionName">listaNatureza</param>
+			</result>
+		</action>
+		
+		<action name="listaNatureza" class="com.controle.documentos.action.DocumentoAction" method="listaNatureza">
+			<result type="tiles">listaNatureza</result>
+		</action>
+		
+		<action name="arquivo" class="com.controle.documentos.action.ArquivoAction">
+			<result type="tiles">arquivo</result>
+		</action>
+		
+		<action name="novaOrigemDestino" class="com.controle.documentos.action.OrigemDestinoAction" method="novaOrigemDestino">
+			<result type="tiles">novaOrigemDestino</result>
+		</action>
+		
+		<action name="gravarOrigemDestino" class="com.controle.documentos.action.OrigemDestinoAction" method="gravarOrigemDestino">
+			<result type="redirectAction">
+				<param name="actionName">listaOrigemDestino</param>
+			</result>
+		</action>
+		
+		<action name="listaOrigemDestino" class="com.controle.documentos.action.OrigemDestinoAction" method="listaOrigemDestino">
+			<result type="tiles">listaOrigemDestino</result>
+		</action>
+		
+		<action name="novoContrato" class="com.controle.documentos.action.ContratoAction" method="novoContrato">
+			<result type="tiles">novoContrato</result>
+		</action>
+		
+		<action name="listaContratos" class="com.controle.documentos.action.ContratoAction" method="listaContratos">
+			<result type="tiles">listaContratos</result>
+		</action>
+		
+		<action name="sobre" class="com.controle.documentos.action.DetaultAction">
+			<result type="tiles">sobre</result>
+		</action>
+		
+		<action name="erro" class="com.controle.documentos.action.DetaultAction">
+			<result type="tiles">erro</result>
+		</action>
+	</package>
+</struts>

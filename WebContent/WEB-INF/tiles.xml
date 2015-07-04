@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="baseLayout" template="layout/baseLayout.jsp">
+		<put-attribute name="title" value="Template" />
+		<put-attribute name="menu" value="/WEB-INF/pages/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/pages/body.jsp" />		
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/home.jsp" />
+	</definition>
+
+	<definition name="novoDocumento" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Novo Documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/novoDocumento.jsp" />
+	</definition>
+
+	<definition name="abrirDocumento" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Abrir Documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/abrirDocumento.jsp" />
+	</definition>
+
+	<definition name="renomearDocumento" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Renomear Documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/renomearDocumento.jsp" />
+	</definition>
+
+	<definition name="documentosDigitalizados" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Documentos digitalizados" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/documentosDigitalizados.jsp" />
+	</definition>
+
+	<definition name="tiposDeDocumento" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Tipos de Documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/tiposDeDocumento.jsp" />
+	</definition>
+
+	<definition name="novoTipoDeDocumento" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Novo tipo de documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/novoTipoDeDocumento.jsp" />
+	</definition>
+
+	<definition name="novoAutor" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Novo Autor" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/novoAutor.jsp" />
+	</definition>
+
+	<definition name="listaAutores" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Todos os Autores" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/listaAutores.jsp" />
+	</definition>
+
+	<definition name="novaNatureza" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Nova Natureza de Documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/novaNatureza.jsp" />
+	</definition>
+
+	<definition name="listaNatureza" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Lista Natureza de documento" />
+		<put-attribute name="body" value="/WEB-INF/pages/documento/listaNatureza.jsp" />
+	</definition>
+
+	<definition name="arquivo" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Arquivos" />
+		<put-attribute name="body" value="/WEB-INF/pages/arquivo.jsp" />
+	</definition>
+
+	<definition name="novaOrigemDestino" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Nova Origem/Destino" />
+		<put-attribute name="body" value="/WEB-INF/pages/origemDestino/novaOrigemDestino.jsp" />
+	</definition>
+
+	<definition name="listaOrigemDestino" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Lista Origem/Destino" />
+		<put-attribute name="body" value="/WEB-INF/pages/origemDestino/listaOrigemDestino.jsp" />
+	</definition>
+
+	<definition name="novoContrato" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Novo Contrato" />
+		<put-attribute name="body" value="/WEB-INF/pages/contrato/novoContrato.jsp" />
+	</definition>
+
+	<definition name="listaContratos" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Lista de Contratos" />
+		<put-attribute name="body" value="/WEB-INF/pages/contrato/listaDeContratos.jsp" />
+	</definition>
+
+	<definition name="sobre" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Sobre" />
+		<put-attribute name="body" value="/WEB-INF/pages/sobre.jsp" />
+	</definition>
+
+	<definition name="erro" extends="baseLayout">
+		<put-attribute name="title" value="Controle de Entrega de Documentos - Erro" />
+		<put-attribute name="body" value="/WEB-INF/pages/erro.jsp" />
+	</definition>
+</tiles-definitions>

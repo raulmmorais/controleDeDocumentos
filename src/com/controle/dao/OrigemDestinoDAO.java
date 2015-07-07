@@ -19,9 +19,8 @@ public class OrigemDestinoDAO {
 	}
 	
 	private static List<OrigemDestinoVO> geraListaTeste(){
+		
 		List<OrigemDestinoVO> listaTeste = new ArrayList<OrigemDestinoVO>();
-		
-		
 		return listaTeste;
 	}
 }
